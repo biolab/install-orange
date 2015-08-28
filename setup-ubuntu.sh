@@ -17,5 +17,5 @@ pip install -r requirements-gui.txt
 python setup.py develop
 cd ..
 git clone https://github.com/biolab/orange-bio
-cd orange3-bio
+cd orange-bio
 python setup.py develop
