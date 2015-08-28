@@ -67,14 +67,14 @@ A window like the one shown below should open. Drag the Orange icon and release 
 applications, for the first time.]
 <p><a href="mac05.png"><img src="mac05-2.png" style="max-width:250px;"></a></p>
 
-<p>Install data fusion add-on by selecting Add-ons from menu Options. Dialog window like this one will appear. </p>
+<p>Install bioinformatics add-on by selecting Add-ons from menu Options. Dialog window like this one will appear. </p>
 
 <p><a href="mac07-3.png"><img src="mac07-3.png" style="max-width:250px;"></a></p>
 
-<p>Now check the Orange3-DataFusion add-on and press OK to install. 
+<p>Now check the Orange3-Bioinformatics add-on and press OK to install. 
 If you don't have the Command Line Tools installed, the install procedure will 
 prompt you to install them. Click Install button and click Agree with the Command Line Tools License Agreement. Upon installation completion, close and reopen Orange. 
-Now you should see new Data Fusion widgets in the left panel.</p>
+Now you should see new Bioinformatics widgets in the left panel.</p>
 
 <p><a href="mac08.png"><img src="mac08-2.png" style="max-width:500px;"></a></p>
 
@@ -101,12 +101,7 @@ Continue with <a href="#testing">Step 2</a> of this installation tutorial.</p>
 Orange3 installation file</a>.
 </li>
 <li>Follow installation wizard to install Orange 3 and its dependencies (Python 3.4, NumPy, etc.).</li>
-<li>Install <a href="graphviz-2.38.msi">Graphviz</a>.</li>
-<!-- http://www.lfd.uci.edu/~gohlke/pythonlibs/68tmfkay/pygraphviz-1.3rc2-cp34-none-win32.whl" -->
-<li>Download <a href="pygraphviz-1.3rc2-cp34-none-win32.whl">pygraphviz</a> and 
-execute  <a href="pygraphviz.bat">Pygraphviz install script</a>. </li>
-<li>Reboot.</li>
-<li>Install Data Fusion add-on.</li>
+<li>Install Bioinformatics add-on.</li>
 <li>Restart Orange 3.</li>
 <li>Continue with <a href="#testing">Step 2</a>.</li>
 </ul>
@@ -136,47 +131,17 @@ you want to allow this program to make changes to your computer.</p>
 
 <p><a href="windows09.png"><img src="windows09.png" style="max-width:400px;"></a></p>
 
-<p> For Data Fusion widgets to work, you will have to install graphviz and pygraphviz.</p>
-<!-- http://www.graphviz.org/pub/graphviz/stable/windows/graphviz-2.38.msi -->
-<p> First download the latest version of <a href="graphviz-2.38.msi"> graphviz.</a>
-<p> Double click the graphviz-2.38.msi file. If the security dialog window asks 
-you, whether you want to run this software, press the Run button. 
-
-<p> Install graphviz by following the installation wizard. Choose yes, when asked 
-if you want to allow this program to make changes to your computer.</p>
-<p><a href="windows19-2.png"><img src="windows19-2.png" style="max-width:300px;"></a></p>
-<p><a href="windows20-2.png"><img src="windows20-2.png" style="max-width:300px;"></a></p>
-<p><a href="windows21-2.png"><img src="windows21-2.png" style="max-width:300px;"></a></p>
-<p><a href="windows22-2.png"><img src="windows22-2.png" style="max-width:300px;"></a></p>
-<p><a href="windows23-2.png"><img src="windows23-2.png" style="max-width:300px;"></a></p>
-<p><a href="windows24-2.png"><img src="windows24-2.png" style="max-width:300px;"></a></p>
-
-<p> Download the <a href="pygraphviz-1.3rc2-cp34-none-win32.whl">pygraphviz package</a>
-Alternatively, download the 32-bit version of the package for python3.4 directly
-from <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz"> http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygraphviz</a>.
-
-<p> Now download the <a href="pygraphviz.bat">Pygraphviz install script</a> to the same directory, 
-where you downloaded the pygraphviz package. Open the download directory and 
-double click the <a href="pygraphviz.bat">pygraphviz.bat</a> script.
-Choose Run, when asked if you are sure you want to run this software.</p>
-<p><a href="windows26-1.png"><img src="windows26-1.png" style="max-width:300px;"></a></p>
-
-<p> A window will open, where you can check the output of the pygraphviz installation.</p>
-
-<p><a href="windows27-2.png"><img src="windows27-2.png" style="max-width:300px;"></a></p>
-
-<p> Reboot.</p>
 
 <p> Double click on the Orange desktop icon to start the Orange application. </p>
-<p> To install data fusion widgets, follow the menu Options->Add-ons.
-Check the box next to Orange3-DataFusion and press OK.</p>
+<p> To install bioinformatics widgets, follow the menu Options->Add-ons.
+Check the box next to Orange3-Bioinformatics and press OK.</p>
 
 <p><a href="windows17-2.png"><img src="windows17-2.png" style="max-width:300px;"></a></p>
 
 <p> For changes to take effect you need to restart Orange. Close 
 the main Orange window and then double click Orange Canvas 
 icon on the desktop to restart Orange application. 
-You should see a new Data Fusion category with many widgets as shown below. </p>
+You should see a new Bioinformatics category with many widgets as shown below. </p>
 
 <p><a href="windows29-2.png"><img src="windows29-2.png" style="max-width:500px;"></a></p>
 
@@ -209,7 +174,6 @@ Open a terminal and run the following commands.</p>
 sudo apt-get install git python-pip python-virtualenv 
   python3-dev python3-numpy python3-scipy 
   python3-pyqt4 python-qt4-dev python3-sip-dev libqt4-dev
-  libgraphviz-dev graphviz
 </pre></code>
 
 <p>Note that Debian users might additionally need to install pkg-config package.</p>
@@ -227,8 +191,8 @@ pip install -r requirements.txt
 pip install -r requirements-gui.txt
 python setup.py develop
 cd ..
-git clone https://github.com/biolab/orange3-datafusion
-cd orange3-datafusion
+git clone https://github.com/biolab/orange-bio
+cd orange3-bio
 python setup.py develop
 </pre></code>
 
@@ -262,7 +226,7 @@ Open a terminal and run the following commands.</p>
 <pre><code>sudo zypper refresh
 sudo zypper install git python-virtualenv python3-devel gcc gcc-c++ 
   python3-numpy python3-numpy-devel python3-scipy 
-  python3-qt4-devel libgraphviz-devel
+  python3-qt4-devel 
 </pre></code>
 
 <p> We will use Python3 and need to create a virtual environment for it:</p>
@@ -278,8 +242,8 @@ pip install -r requirements.txt
 pip install -r requirements-gui.txt
 python setup.py develop
 cd ..
-git clone https://github.com/biolab/orange3-datafusion
-cd orange3-datafusion
+git clone https://github.com/biolab/orange-bio
+cd orange3-bio
 python setup.py develop</pre></code>
 
 <p> Now you can open Orange with following command </p>
