@@ -12,6 +12,7 @@ git clone https://github.com/biolab/orange3
 cd orange3
 pip install -r requirements.txt
 pip install -r requirements-gui.txt
+pip install -r requirements-sql.txt
 python setup.py develop
 cd $p
 git clone https://github.com/biolab/orange-bio
